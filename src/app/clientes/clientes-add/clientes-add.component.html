@@ -3,25 +3,26 @@
     <li class="breadcrumb-item active">Cadastro</li>
 </ol>
 <div class="container">
-    <form >
+    <form>
 
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
                     <label>Id:</label>
-                    <input  type="text" class="form-control" disabled="true" [ngModel]="cliente.id" name="id">
+                    <input type="text" class="form-control" disabled="true" [ngModel]="cliente.id" name="id">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label>Data de Cadastro:</label>
-                    <input  type="text" class="form-control" disabled="true" [ngModel]="cliente.dataCadastro" name="dataCadastro">
+                    <input type="text" class="form-control" disabled="true" [ngModel]="cliente.dataCadastro"
+                        name="dataCadastro">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label>Nome:</label>
-                    <input  type="text" class="form-control" maxlength="80" [(ngModel)]="cliente.nome" name="nome">
+                    <input type="text" class="form-control" maxlength="80" [(ngModel)]="cliente.nome" name="nome">
                 </div>
             </div>
         </div>
@@ -29,15 +30,14 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label>Cpf:</label>
-                    <input  type="text" [(ngModel)]="cliente.cpf" name="cpf" 
-                    class="form-control" maxlength="11">
+                    <input type="text" [(ngModel)]="cliente.cpf" name="cpf" class="form-control" maxlength="11">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label>Telefone:</label>
-                    <input  type="text" [(ngModel)]="cliente.telefone" name="telefone" 
-                    class="form-control" maxlength="11">
+                    <input type="text" [(ngModel)]="cliente.telefone" name="telefone" class="form-control"
+                        maxlength="11">
                 </div>
             </div>
         </div>
@@ -47,8 +47,8 @@
                 <button type="submit" class="btn btn-success" (click)="Salvar()">
                     <i class="fa fa-save"></i> Salvar
                 </button>
-                
-                <button  type="button" class="btn btn-danger ml-1" (click)="voltar()">
+
+                <button type="button" class="btn btn-danger ml-1" (click)="voltar()">
                     <i class="fa fa-arrow-alt-circle-left"></i> Voltar
                 </button>
             </div>

@@ -9,11 +9,14 @@ import { ClientesModule } from './clientes/clientes.module';
 import { ClientesService } from './clientes.service';
 import { HttpClientModule } from '@angular/common/http'
 import { ServicoModule } from './servico/servico.module';
+import { ServicoService } from './servico.service';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,8 @@ import { ServicoModule } from './servico/servico.module';
     ServicoModule
   ],
   providers: [
-    ClientesService
+    ClientesService,
+    ServicoService
   ],
   bootstrap: [AppComponent]
 })

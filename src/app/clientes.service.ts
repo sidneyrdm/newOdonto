@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Cliente } from './clientes/cliente';
 import { HttpClient } from '@angular/common/http'
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ export class ClientesService {
   constructor(private http : HttpClient) { }
 
   
-  Url = 'http://localhost:8080/api/clientes';
+  Url = environment.apiUrlBase+'/clientes';
 
   salvar(cliente: Cliente) : Observable<Cliente> {
     return this.http.post<Cliente>(this.Url, cliente);

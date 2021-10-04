@@ -26,7 +26,7 @@ export class ClientesAddComponent implements OnInit {
   }
 
   teste(){
-    alert("Cliclou no botão de Teste");
+    alert("Clicou no botão de Teste");
   }
   
   voltar(){
