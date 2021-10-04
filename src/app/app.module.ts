@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { ServicoModule } from './servico/servico.module';
 import { ServicoService } from './servico.service';
 import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LoginComponent } from './login/login.component';
     HttpClientModule,
     TemplateModule,
     ClientesModule,
-    ServicoModule
+    ServicoModule,
+    FormsModule
   ],
   providers: [
     ClientesService,
